@@ -1,30 +1,49 @@
 [
     {
-      "id": "",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "001",
+      "name": "Charlotte",
+      "email": "charlotte@bootcamp.com",
+      "password": "gjiro4523"
     },
 
     {
-        "id": "",
-        "name": "",
-        "email": "",
-        "password": ""
+        "id": "002",
+        "name": "Jason",
+        "email": "jason@boocamp.com",
+        "password": "vfkosrmt34r"
       },
 
       {
-        "id": "",
-        "name": "",
-        "email": "",
-        "password": ""
+        "id": "003",
+        "name": "Jordan",
+        "email": "jordan@bootcamp.com",
+        "password": "fmraeklnrt3"
       },
       
       {
-        "id": "",
-        "name": "",
-        "email": "",
-        "password": ""
+        "id": "004",
+        "name": "Ellesse",
+        "email": "ellesse@bootcamp.com",
+        "password": "rfmk4o5tF"
+      },
+
+      {
+        "id": "005",
+        "name": "Chris",
+        "email": "chris@bootcamp.com",
+        "password": "rfgrevf4"
+      },
+      {
+        "id": "006",
+        "name": "Mind",
+        "email": "mind@bootcamp.com",
+        "password": "rfrmko53222"
+      },
+      {
+        "id": "007",
+        "name": "Moahmed",
+        "email": "mohamed@bootcamp.com",
+        "password": "rffh66DR"
       }
 
 ]
