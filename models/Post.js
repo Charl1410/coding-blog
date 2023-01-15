@@ -5,7 +5,7 @@ class Post extends Model {}
 
 Post.init(
   {
-    id: {
+    post_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
