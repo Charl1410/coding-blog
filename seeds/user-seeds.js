@@ -22,6 +22,7 @@ const userData = [
       password: "rfmk4o5tF",
     },
     {
+      name: "Chris",
       email: "chris@bootcamp.com",
       password: "rfgrevf4",
     },
