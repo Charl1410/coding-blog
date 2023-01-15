@@ -94,6 +94,10 @@ nav {
     transform: scale(1.1);
 }
 
+button:hover :not(:hover){
+    opacity: 0.3;
+}
+
 li:hover {
     transform: scale(1.3);
 
