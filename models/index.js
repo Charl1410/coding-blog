@@ -11,13 +11,11 @@ User.hasMany(Posts, {
 
 Posts.belongsTo(User, {
   foreignKey: 'user_id'
-
 });
 
 Posts.hasMany(Comments, {
     //not sure about key
     foreignKey: 'user_id'
-    
 })
 
 module.exports = { User, Posts, Comments };

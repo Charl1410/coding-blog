@@ -7,7 +7,7 @@ Post.init(
   {
 
     posted_by: {
-      type:DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
