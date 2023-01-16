@@ -14,10 +14,18 @@ const postData = [
     user_id: "5"
   },
   {
+
+    "post_id": "",
+    "post_title": "",
+    "post_content": "Charlotte",
+    "date_crated": "today",
+    "user_id": ""
+
     post_title: "What is the best new coding language to learn?",
     post_content: "Whether you are looking to begin coding as a hobby, a new career, or just to enhance your current role, the first thing you will have to do is decide which programming language you want to start with. There is no right answer, of course. Choosing a first language will depend on what kind of projects you want to work on, who you want to work for, or how easy you want it to be. Hopefully, this guide will help give you a better idea of which one you should pursue.",
     date_created: "10/01/2023",
     user_id: "1"
+
   },
   {
     post_title: "Python vs Java",
