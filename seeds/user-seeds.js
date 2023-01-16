@@ -8,7 +8,7 @@ const userData = [
     },
     {
       name: "Jason",
-      email: "jason@boocamp.com",
+      email: "jason@bootcamp.com",
       password: "vfkosrmt34r",
     },
     {
@@ -40,4 +40,4 @@ const userData = [
 
   const seedUsers = () => User.bulkCreate(userData);
 
-module.exports = seedUsers;
+module.exports = seedUsers;  
