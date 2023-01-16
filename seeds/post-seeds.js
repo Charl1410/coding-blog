@@ -18,7 +18,7 @@
     "post_id": "",
     "post_title": "",
     "post_content": "Charlotte",
-    "date_created": "today",
+    "date_crated": "today",
     "user_id": ""
   },
 
