@@ -22,3 +22,5 @@ app.use(require('./controllers/dish-routes'));
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening on http/localhost:3001'));
 });
+
+//need to add sessin stored information in this file 
