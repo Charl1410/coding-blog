@@ -17,6 +17,14 @@ This application allows users to create and share blog posts on a social platfor
 
 # User Story
 
+1. As a coder, I want to be able to create a new blog post within my application so that I can share my thoughts and ideas with my readers.
+
+2. I want to be able to access the blog post creation feature from the main menu of the application. Once I am on the blog post creation page, I want to be able to input the title and body.
+
+3. I also want to be able to comenet, like and dislike other posts.
+
+# Acceptance Criteria
+
 1.	The user opens the blog posting application.
 2.	The user is prompted to either login or create an account if they do not already have one.
 3.	Once logged in, the user can navigate to the "New Post" page.
