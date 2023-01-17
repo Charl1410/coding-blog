@@ -7,8 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../Public/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">    <title>Code blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
+    <title>Code blog</title>
+     
 </head>
 <body>
     <main>
@@ -16,9 +18,12 @@
             
     <nav>
         <ul>
+        
           <li><a class="active" href="#">Sign In</a></li>
           <li><a class="active" href="#">Create account</a></li>
-          <li><a class="active" href="#">Language</a></li>
+          <li><span class="material-symbols-outlined">
+            person
+            </span><a class="active" href="#">Profile</a></li>
           <li><a class="active" href="#">Features</a></li>
         </ul>
        
@@ -26,11 +31,13 @@
       <!-- everything below here will be injected in using the body tag for handlebars -->
       <!-- Will want to do a {{#each posts as |post}} to go through and put in the content for each post card  -->
 
+
       <div class="title">
+        <img id="logo" src = "logo.png">
+
         <p class="mono-font">CODE BLOG</p>
         <p class="monospace">For all your coding needs</p>
       </div>
-
 
     <div class="card-container">
       <div class="search-box">
@@ -51,7 +58,17 @@
                 <button>Upvote</button>
                 <button>Downvote</button>
                 <button>Save to reading list</button>      
-            </div>              
+            </div> 
+            <div>
+              <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
+           </div>
+
+           <div class="loaded-comments-container">
+            <p class="loaded-comments">Generated comments go here</p>
+            <p class="loaded-comments">Comment 1</p>
+            <p  class="loaded-comments">Comment 2</p>
+            <p class="loaded-comments">Comment 3</p>
+           </div>
       </div>
 
       <div class="card">

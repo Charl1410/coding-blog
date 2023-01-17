@@ -9,6 +9,7 @@
       </div>
       <div class="card">
         <p class="blog-title">{{post.post_title}}</p>
+        <p>{{post.date_created}}</p>
         <p class="posted-by">By: Charlotte Griffin</p>
 
 <p>{{post.post_content}}</p>        
@@ -17,10 +18,25 @@
          <button>Upvote</button>
          <button>Downvote</button>
          <button>Save to reading list</button>
-      
         </div>
+         <div>
+          
+        {{/each}}
+
+        {{#each comments as |comment}}
+
+              <textarea class="comments">Comment</textarea> <button>Add Comment</button>     
+           </div>
+
+           <div class="loaded-comments">
+            <p>Generated comments go here</p>
+           </div>
+
+        {{/each}}
       </div>
-      {{/each}} 
+
+     
+ 
 
       {{!-- <div class="card">
         <p class="blog-title">Blog Title</p>
