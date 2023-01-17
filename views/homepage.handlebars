@@ -1,31 +1,26 @@
- <div class="title">
-        <p class="mono-font">CODE BLOG</p>
-        <p class="monospace">For all your coding needs</p>
-      </div>
-
-  <div class="title">
-        <img id="logo" src = "logo.png">
+<div class="title">
+        <img id="logo" src = "../project-2-views/logo.png">
 
         <p class="mono-font">CODE BLOG</p>
         <p class="monospace">For all your coding needs</p>
-      </div>
+</div>
 
     <div class="card-container">
         {{#each posts as |post|}}
-      </div>
+    </div>
       <div class="card">
         <p class="blog-title">{{post.post_title}}</p>
         <p>{{post.date_created}}</p>
-        <p class="posted-by">By: Charlotte Griffin</p>
+        <p class="posted-by">{{post.user.name}}</p>
 
-<p>{{post.post_content}}</p>        
-        <div class="interaction-bar">
-         <button>Comment</button>
-         <button>Upvote</button>
-         <button>Downvote</button>
-         <button>Save to reading list</button>
-        </div>
-         <div>
+        <p>{{post.post_content}}</p>        
+            <div class="interaction-bar">
+            <button>Comment</button>
+            <button>Upvote</button>
+            <button>Downvote</button>
+            <button>Save to reading list</button>
+            </div>
+    </div>
           
         {{/each}}
 
