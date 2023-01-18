@@ -11,11 +11,11 @@ router.get('/', async (req, res) => {
             attributes: ['name'],
           },
           { model: Comments,
-          attributes: ['text']
+          attributes: ['text','user_id']
           }
         ],      
-      });
-  
+      }); 
+      console.log(postData)
       // Serialize data so the template can read it
       const posts = postData.map((post) => post.get({ plain: true }));
       console.log (posts)

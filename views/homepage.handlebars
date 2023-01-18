@@ -20,26 +20,24 @@
             <button>Save to reading list</button>
       </div>
 
-<div class="comment-section">
-            <div>
-              <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
-           </div>
+          <div class="comment-section">
+              <div>
+                <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
+            </div>
 
            <div class="loaded-comments-container">
 
                 {{#each comments as |comment|}}
-                  
+                {{!-- Not sure why this isnt working  --}}
+                    <p>{{}}</p>
                     <p class="loaded-comments">{{comment.text}}</p>
       
                 {{/each}}
           </div>
-
-    </div>
-
+          </div>
     </div>
    
 
-    
 </div>
         {{/each}}
 
