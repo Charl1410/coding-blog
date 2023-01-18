@@ -13,10 +13,10 @@
 
                         {{#each comments as |comment|}}
                         {{!-- Not sure why this isnt working  --}}
-                            <p>{{}}</p>
+                            <p>{{comment.name.user}}</p>
                             <p class="loaded-comments">{{comment.text}}</p>
-            
-                        {{/each}}
+        
+                {{/each}}
                 </div>
             </div>
     </div>
