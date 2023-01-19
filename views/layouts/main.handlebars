@@ -15,13 +15,12 @@
             
     <nav>
         <ul>
-          <li><a class="active" href="/login">Log in</a></li>
-          {{!-- Only show if logged in  --}}
+          {{#if logged_in}}
         <li><a class="active" href="/login">Log out</a></li>
-          {{!-- If logged in this won't show on the nav bar --}}
-          <li><a class="active" href="/signup">Sign up</a></li>
-          {{!-- If not logged in this wont show --}}
-          <li><a class="active" href="/profile">Profile</a></li>
+        <li><a class="active" href="/profile">Profile</a></li>
+         {{else}}
+        <li><a class="active" href="/login">Log in</a></li>
+        {{/if}}
           <li><a class="active" href="/">Home</a></li>
         </ul>
     </nav>
