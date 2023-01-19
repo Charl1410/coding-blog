@@ -36,9 +36,42 @@ This application allows users to create and share blog posts on a social platfor
 
 # Screenshots 
 
+To Be Added
+
 # Initialisation
 
 # Usage
+
+## Account Creation
+To start using the application, you will first need to create an account. Click on the "Sign Up" button on the login page and fill out the registration form with your email and password. 
+
+Once verified, you can now log in to the application.
+
+## Creating a New Post
+
+Once logged in, you will be able to access the "New Post" page by clicking on the "Create Post" button on the top navigation bar. On this page, you can enter a title and body for your post. You can also preview your post before submitting it.
+
+## Viewing and Interacting with Posts
+
+To view the posts created by other users, click on the "Home" button on the top navigation bar. This will take you to the home page where you can see a list of all the most recent posts.
+
+Once on a post, you can interact with it by commenting or liking it. You can also share the post on other social media platforms by clicking on the corresponding button.
+
+## Managing Your Posts
+
+You can view and manage your own posts by clicking on the "My Posts" button on the top navigation bar. On this page, you can see a list of all the posts you have created and can edit or delete them.
+Profile
+
+You can access your profile by clicking on the "Profile" button on the top navigation bar. This will show you your personal information and a list of your posts.
+
+## Profile
+
+You can access your profile by clicking on the "Profile" button on the top navigation bar. This will show you your personal information and a list of your posts.
+
+
+# Contributors
+
+Jordan Gibbs (gibbo3433), Charlotte Griffin (Charl1410), Ellese Donaldson (ellessed), Mindaugas Narusevicius (MindOfDevelopment), Mohamed Elmi (moelmi89)
 
 # Licensing 
 
