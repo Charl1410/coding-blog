@@ -8,7 +8,7 @@
             <div class="card-container">
                 {{#each posts as |post|}}
               <div class="card">
-        <p class="blog-title"><a href="/post/{{id}}"></a>{{post.post_title}}</p>
+        <p class="blog-title"><a href=""></a>{{post.post_title}}</p>
         <p>{{post.date_created}}</p>
         <p class="posted-by">{{post.user.name}}</p>
 
@@ -19,7 +19,7 @@
             <button>Downvote</button>
             <button>Save to reading list</button>
       </div>
-
+ 
           <div class="comment-section">
               <div>
                 <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
@@ -30,7 +30,7 @@
                         {{#each comments as |comment|}}
                         {{!-- Not sure why this isnt working  --}}
                         
-                            <p>{{comment.name.user}}</p>
+                            <p>{{comment.name.user}}:</p>
 
                             <p class="loaded-comments">{{comment.text}}</p>
         
