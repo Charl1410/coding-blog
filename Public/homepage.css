@@ -165,7 +165,7 @@ textarea {
 }
 
 .aside-left {
-    border:solid 2px blue;
+    border:solid 5px rgb(255, 255, 255);
     width:30%;
     height:50vh;
     margin:1%;
@@ -193,18 +193,54 @@ textarea {
 
 .saved-post-container {
     width:60%;
-    height:20vh;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     margin:1%
 
 }
 
-input {
-    width:90%;
+.create-post {
+    /* border: solid 5px white; */
+    background-color: #dbf2f2;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
-    border-bottom: solid 2px #0dccea ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:2%;
+    margin-bottom: 2%;
+
 }
+
+.post-title {
+    font-size: 200%;
+    padding:2%;
+    margin-bottom: 2%;
+    width:80%;
+}
+
+.post-content  {
+        width:100%;
+        resize: vertical;
+        padding:15px;
+        border-radius:15px;
+        border:0;
+        box-shadow:4px 4px 10px grey;
+        height:150px;
+        width:80%;
+      }
+
+input {
+   
+        width:100%;
+        resize: vertical;
+        padding:15px;
+        border-radius:15px;
+        border:0;
+        box-shadow:4px 4px 10px gray;
+        height:10px;
+      }
+
+
 
 
 button {
