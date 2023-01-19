@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">    <title>Code blog</title>
+    
 </head>
 <body>
     <main>
@@ -15,12 +16,14 @@
             
     <nav>
         <ul>
+
           {{#if logged_in}}
         <li><a class="active" href="/login">Log out</a></li>
         <li><a class="active" href="/profile">Profile</a></li>
          {{else}}
         <li><a class="active" href="/login">Log in</a></li>
         {{/if}}
+
           <li><a class="active" href="/">Home</a></li>
         </ul>
     </nav>
@@ -34,6 +37,9 @@
    </footer>
        
     </main>
+    {{#if logged_in}}
+  <script src="../js/logout.js"></script>
+  {{/if}}
     
 </body>
 </html>
