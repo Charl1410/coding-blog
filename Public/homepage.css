@@ -284,5 +284,10 @@ form input {
   color: blue;
 }
 
+/* Log In Styling */
 
-
+#LogInHeader {
+    font-size: 2rem;
+  color: 1;
+  margin-bottom: 1.2rem;
+}
