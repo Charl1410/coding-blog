@@ -12,6 +12,13 @@ background-color: rgb(234, 246, 246);
   'opsz' 48
 }
 
+.d-flex, .title, .card, footer, .create-post, .log-in-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #logo {
    height:10vh;
@@ -19,15 +26,18 @@ background-color: rgb(234, 246, 246);
 }
 
 ul {
+    position: fixed;
+    top:0;
+    width:100%;
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
+    background-color: rgb(213, 233, 233);
 }
 
 nav li {
- 
     text-decoration: none;
     border-radius: 10px;
     text-align: center;
@@ -43,6 +53,7 @@ nav li {
 a {
     text-decoration: none;
     color: black;
+    background-color: rgb(213, 233, 233);
 }
 
 nav {
@@ -53,10 +64,6 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-weight: 150;
     color: rgb(102, 191, 191);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height:50vh;
 }
 
@@ -74,12 +81,9 @@ nav {
     margin:1%;
     border: solid 5px white;
     border-radius: 10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-bottom: 20px;
     flex-direction: column;
+    text-align: center;
     padding:3%;
     box-shadow: 10px 0 10px 0 grey;
 
@@ -101,6 +105,18 @@ nav {
 
 .posted-by {
     font-size: 150%;
+}
+
+.comment-section {
+    width:80%;
+    padding:3%;
+    margin-top: 3%;
+}
+
+.loaded-comments {
+    border-bottom: solid 1px grey;
+    margin:3%;
+
 }
 
 
@@ -126,10 +142,6 @@ button:hover {
 footer {
     height: 20vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: 'Source Code Pro', monospace;
     
 }
@@ -144,9 +156,7 @@ textarea {
     width: 80%;
 }
 
-.loaded-comments {
-    border-bottom: solid 1px grey;
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -202,10 +212,6 @@ textarea {
     /* border: solid 5px white; */
     background-color: #dbf2f2;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding:2%;
     margin-bottom: 2%;
 
@@ -259,6 +265,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 
@@ -303,6 +310,21 @@ button {
   margin-bottom: 1.2rem;
 }
 
+form {
+    margin: 7%;
+    width: 25%;
+    padding: 3%;
+    border: solid 2px #a1ccc8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 130%;
+
+}
+
 form input {
   width: 92%;
   outline: none;
@@ -311,6 +333,10 @@ form input {
   margin-bottom: 10px;
   border-radius: 20px;
   background: #e4e4e4;
+}
+
+.log-in-body{
+    text-align: center;
 }
 
 .Join {
