@@ -26,15 +26,18 @@ background-color: rgb(234, 246, 246);
 }
 
 ul {
+    position: fixed;
+    top:0;
+    width:100%;
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
+    background-color: rgb(213, 233, 233);
 }
 
 nav li {
- 
     text-decoration: none;
     border-radius: 10px;
     text-align: center;
@@ -50,6 +53,7 @@ nav li {
 a {
     text-decoration: none;
     color: black;
+    background-color: rgb(213, 233, 233);
 }
 
 nav {
@@ -79,6 +83,7 @@ nav {
     border-radius: 10px;
     margin-bottom: 20px;
     flex-direction: column;
+    text-align: center;
     padding:3%;
     box-shadow: 10px 0 10px 0 grey;
 
@@ -306,7 +311,7 @@ button {
 }
 
 form {
-    margin: 3%;
+    margin: 7%;
     width: 25%;
     padding: 3%;
     border: solid 2px #a1ccc8;
