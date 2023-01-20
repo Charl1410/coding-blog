@@ -269,6 +269,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 
@@ -313,6 +314,21 @@ button {
   margin-bottom: 1.2rem;
 }
 
+form {
+    margin:3%;
+    width: 25%;
+    border: solid 2px #a1ccc8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 130%;
+
+}
+
 form input {
   width: 92%;
   outline: none;
@@ -321,6 +337,14 @@ form input {
   margin-bottom: 10px;
   border-radius: 20px;
   background: #e4e4e4;
+}
+
+.log-in-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .Join {
