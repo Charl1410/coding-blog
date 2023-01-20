@@ -33,8 +33,9 @@ ul {
     list-style: none;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 5vh;
     background-color: rgb(213, 233, 233);
+    opacity: 70%;
 }
 
 nav li {
@@ -119,11 +120,16 @@ nav {
 
 }
 
+ul:hover {
+    opacity:100%;
+}
+
 
 .card:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 
 button:hover {
     transform: scale(1.1);
