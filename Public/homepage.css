@@ -12,6 +12,13 @@ background-color: rgb(234, 246, 246);
   'opsz' 48
 }
 
+.d-flex, .title, .card, footer, .create-post, .log-in-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #logo {
    height:10vh;
@@ -53,10 +60,6 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-weight: 150;
     color: rgb(102, 191, 191);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height:50vh;
 }
 
@@ -74,10 +77,6 @@ nav {
     margin:1%;
     border: solid 5px white;
     border-radius: 10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin-bottom: 20px;
     flex-direction: column;
     padding:3%;
@@ -138,10 +137,6 @@ button:hover {
 footer {
     height: 20vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: 'Source Code Pro', monospace;
     
 }
@@ -212,10 +207,6 @@ textarea {
     /* border: solid 5px white; */
     background-color: #dbf2f2;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding:2%;
     margin-bottom: 2%;
 
@@ -315,15 +306,15 @@ button {
 }
 
 form {
-    margin:3%;
+    margin: 3%;
     width: 25%;
+    padding: 3%;
     border: solid 2px #a1ccc8;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 130%;
 
@@ -340,10 +331,6 @@ form input {
 }
 
 .log-in-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
