@@ -2,17 +2,18 @@ const newPostHandler = async (event) => {
     event.preventDefault();
   
     const name = document.querySelector('#post-name').value.trim();
-    const description = document.querySelector('#project-desc').value.trim();
-  
+    const description = document.querySelector('#post-desc').value.trim();
+    console.log(name, description)
+
     if (name && description) {
-      const response = await fetch(`/api/posts`, {
+      const response = await fetch(`/api/post`, {
         method: 'POST',
         body: JSON.stringify({ name, description }),
         headers: {
           'Content-Type': 'application/json',
         },
       });
-  
+
       if (response.ok) {
         document.location.replace('/profile');
       } else {
@@ -37,11 +38,7 @@ const newPostHandler = async (event) => {
     }
   };
   
-  document
-    .querySelector('.new-project-form')
-    .addEventListener('submit', newPostHandler);
+  document.querySelector('.new-post-form').addEventListener('submit', newPostHandler);
   
-  document
-    .querySelector('.project-list')
-    .addEventListener('click', delButtonHandler);
+  document.querySelector('.project-list').addEventListener('click', delButtonHandler);
   
