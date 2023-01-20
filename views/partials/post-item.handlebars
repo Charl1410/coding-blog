@@ -6,18 +6,19 @@
 
         <p>{{post_content}}</p>        
             <div class="interaction-bar">
-            <button>Comment</button>
-            <button>Upvote</button>
+            <button>View Comment</button>
+            {{!-- <button>Upvote</button>
             <button>Downvote</button>
-            <button>Save to reading list</button>
+            <button>Save to reading list</button> --}}
              </div>
 
-
- <div class="comment-section">
+    {{!-- {{#if logged_in}} --}}
+ <div class="comment-section" id="comment-section">
               <div>
-                <textarea class="create-comments">Create your own comment</textarea> <button>Add Comment</button>     
+                <input  class="create-comment" type="text" placeholder="Create your own comment" />
+                <button>Add Comment</button>     
             </div>
-            
+    {{!-- {{/if}} --}}
 
                 <div class="loaded-comments-container">
 
