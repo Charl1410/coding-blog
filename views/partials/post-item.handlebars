@@ -13,21 +13,21 @@
              </div>
 
     {{!-- {{#if logged_in}} --}}
- <div class="comment-section" id="comment-section">
-              <div>
-                <input  class="create-comment" type="text" placeholder="Create your own comment" />
-                <button>Add Comment</button>     
-            </div>
-    {{!-- {{/if}} --}}
+        <div class="comment-section" id="comment-section">
+                    <div>
+                        <input  class="create-comment" type="text" placeholder="Create your own comment" />
+                        <button>Add Comment</button>     
+                    </div>
+            {{!-- {{/if}} --}}
 
-                <div class="loaded-comments-container">
+                        <div class="loaded-comments-container">
 
-                        {{#each comments as |comment|}}
-                        
-                            <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
-        
-                        {{/each}}
-                </div>
+                                {{#each comments as |comment|}}
+                                
+                                    <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
+                
+                                {{/each}}
+                        </div>
             </div>
 
 </div>

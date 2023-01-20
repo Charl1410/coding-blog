@@ -103,6 +103,18 @@ nav {
     font-size: 150%;
 }
 
+.comment-section {
+    width:80%;
+    padding:3%;
+    margin-top: 3%;
+}
+
+.loaded-comments {
+    border-bottom: solid 1px grey;
+    margin:3%;
+
+}
+
 
 .card:hover {
     transform: scale(1.1);
@@ -144,9 +156,7 @@ textarea {
     width: 80%;
 }
 
-.loaded-comments {
-    border-bottom: solid 1px grey;
-}
+
 
 
 @media screen and (max-width: 768px) {
