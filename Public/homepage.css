@@ -12,7 +12,7 @@ background-color: rgb(234, 246, 246);
   'opsz' 48
 }
 
-.d-flex, .title, .card, footer, .create-post, .log-in-body {
+.d-flex, .title, .card, footer, .create-post, .log-in-body, #body-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +47,14 @@ nav li {
     display:flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-a {
+nav li a {
     text-decoration: none;
     color: black;
     background-color: rgb(213, 233, 233);
 }
+
 
 nav {
     border-bottom: dotted 1px rgb(102, 191, 191);
@@ -187,9 +186,9 @@ textarea {
 
 .aside-left {
     border:solid 5px rgb(255, 255, 255);
-    width:30%;
+    width:80%;
     height:50vh;
-    margin:1%;
+    margin-top:5%;
 
 }
 
@@ -213,7 +212,7 @@ textarea {
 
 
 .saved-post-container {
-    width:60%;
+    width:100%;
     /* border: solid 2px black; */
     margin:1%
 
@@ -331,6 +330,7 @@ button {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     font-size: 130%;
 
 }
