@@ -3,20 +3,22 @@ console.log('hello')
 const commentSection = document.getElementById("comment-section");
 const viewCommentBtn = document.getElementById("view-comment-btn");
 
-commentSection.style.visibility = "hidden";
+// commentSection.style.display= "none";
 
 function showComments() {
-    commentSection.style.visibility = "visible";
-    viewCommentBtn.textContent = "Hide Comments";
-}
-
-function hideComments() {
-    if (viewCommentBtn.textContent ===  "Hide Comments")
-    {
-        commentSection.style.visibility = "hidden";
-
+    if (commentSection.style.display === "none"){
+        commentSection.style.display = "block";
+        viewCommentBtn.textContent = "Hide comments";
     }
+
+    else {
+        commentSection.style.display = "none";
+        viewCommentBtn.textContent = "View comments";
+    }
+    
+    
 }
+
 
 
 viewCommentBtn.addEventListener('click', showComments)
