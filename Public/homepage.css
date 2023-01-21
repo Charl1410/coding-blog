@@ -96,6 +96,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(213, 233, 233);
+    border-radius: 10px;
       
 }
 
@@ -178,6 +179,10 @@ textarea {
 #body-container{
     display:flex;
 
+}
+
+.profile-name {
+    font-size: 150%;
 }
 
 .aside-left {
@@ -316,9 +321,8 @@ button {
   margin-bottom: 1.2rem;
 }
 
-form {
+#profile-form-style, #form-style {
     margin: 7%;
-    width: 25%;
     padding: 3%;
     border: solid 2px #a1ccc8;
     border-radius: 10px;
@@ -330,6 +334,12 @@ form {
     font-size: 130%;
 
 }
+
+#form-style {
+    width: 25%;
+}
+
+
 
 form input {
   width: 92%;
