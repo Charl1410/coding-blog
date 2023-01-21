@@ -1,20 +1,20 @@
 const newPostHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#post-name').value.trim();
-    const description = document.querySelector('#post-desc').value.trim();
-    console.log(name, description)
+    const post_title = document.querySelector('#post-name').value.trim();
+    const post_content = document.querySelector('#post-desc').value.trim();
+    console.log(post_title, post_content)
 
-    if (name && description) {
-      const response = await fetch("api/posts", {
+    if (post_title && post_content) {
+      const response = await fetch("/api/posts", {
         method: 'POST',
-        body: JSON.stringify({ name, description }),
+        body: JSON.stringify({ post_title, post_content }),
         headers: {
           'Content-Type': 'application/json',
         },
       });
 
-      console.log(name, description + "console log 2")
+      // console.log(name, description + "console log 2")
 
       if (response.ok) {
         document.location.replace('/profile');
