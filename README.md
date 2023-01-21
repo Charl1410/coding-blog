@@ -12,7 +12,7 @@
 
 ## Description
 
-The purpose of this application is to provide users with a social media blog platform specific to coding. Users can view all existing posts from other users as well as create their own account and view their profile. Individual users can generate and view their own posts from their profile as well as seeing them on the homepage. Additionally, users can interact with post from other users by commenting!
+The purpose of this application is to provide users with a social media blog platform specific to coding. Users can view all existing posts from other users as well as create their own account and view their profile. Individual users can generate and view their own posts from their profile as well as seeing them on the homepage once created. Additionally, users can interact with post from other users by commenting! Posts can also be viewed individually in with a large format by clicking the title.
 
 
 ## Account Creation
