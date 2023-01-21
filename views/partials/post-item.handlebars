@@ -12,7 +12,7 @@
             <button>Save to reading list</button> --}}
              </div>
 
-    {{!-- {{#if logged_in}} --}}
+         {{!-- {{#if logged_in}} --}}
         <div class="comment-section" id="comment-section">
                     <div>
                         <input  class="create-comment" type="text" placeholder="Create your own comment" />
@@ -20,14 +20,11 @@
                     </div>
             {{!-- {{/if}} --}}
 
-                        <div class="loaded-comments-container">
-
-                                {{#each comments as |comment|}}
-                                
-                                    <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
-                
-                                {{/each}}
-                        </div>
-            </div>
+                    <div class="loaded-comments-container">
+                             {{#each comments as |comment|}}
+                                 <p class="loaded-comments">{{user.name}}: {{comment.text}}</p>
+                            {{/each}}
+                    </div>
+        </div>
 
 </div>

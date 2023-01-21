@@ -2,25 +2,25 @@
   <div id="body-container">
                 <aside class="aside-left">
                     <header class="profile-header">
-                        <p>{{name}}</p>
+                        <p class="profile-name">Hi {{name}}!</p>
                     </header>
-                    
-                    <div class="profile-info">
+                        <p>Welcome to your page!</p>
+                    {{!-- <div class="profile-info">
                         <input type="text" id="profile-information"><br>                   
-                     </div>
+                     </div> --}}
                 </aside>
 
                     
                 <div class="saved-post-container">
                         
-                        <form class="form new-post-form">
+                        <form id="profile-form-style" class="form new-post-form">
                             <h1>Create a new post</h1>
                             <input class="post-title" id="post-name" type="text" placeholder="Post name" />
                             <input class="post-content" id="post-desc" type="text" placeholder="What do you want to post?" />
                             <button type="submit" id="create-post">Create post</button>
-                        </form>
+                        </formid=class=>
                         
-                        <h1>View your posts!!</h1>
+                        <h1>View your previous posts!!</h1>
                                     
                             <div class="card-container">
                                 {{#each posts as |post|}}

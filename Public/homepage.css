@@ -12,7 +12,7 @@ background-color: rgb(234, 246, 246);
   'opsz' 48
 }
 
-.d-flex, .title, .card, footer, .create-post, .log-in-body {
+.d-flex, .title, .card, footer, .create-post, .log-in-body, #body-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +47,14 @@ nav li {
     display:flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-a {
+nav li a {
     text-decoration: none;
     color: black;
     background-color: rgb(213, 233, 233);
 }
+
 
 nav {
     border-bottom: dotted 1px rgb(102, 191, 191);
@@ -96,6 +95,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(213, 233, 233);
+    border-radius: 10px;
       
 }
 
@@ -180,11 +180,15 @@ textarea {
 
 }
 
+.profile-name {
+    font-size: 150%;
+}
+
 .aside-left {
     border:solid 5px rgb(255, 255, 255);
-    width:30%;
-    height:50vh;
-    margin:1%;
+    width:80%;
+    padding:2%;
+    margin-top:5%;
 
 }
 
@@ -208,7 +212,7 @@ textarea {
 
 
 .saved-post-container {
-    width:60%;
+    width:100%;
     /* border: solid 2px black; */
     margin:1%
 
@@ -224,7 +228,6 @@ textarea {
 }
 
 .post-title {
-    font-size: 200%;
     padding:2%;
     margin-bottom: 2%;
     width:80%;
@@ -316,9 +319,8 @@ button {
   margin-bottom: 1.2rem;
 }
 
-form {
+#profile-form-style, #form-style {
     margin: 7%;
-    width: 25%;
     padding: 3%;
     border: solid 2px #a1ccc8;
     border-radius: 10px;
@@ -327,9 +329,16 @@ form {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     font-size: 130%;
 
 }
+
+#form-style {
+    width: 25%;
+}
+
+
 
 form input {
   width: 92%;
