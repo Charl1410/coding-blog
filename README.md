@@ -64,11 +64,14 @@ To run the application:
 * The data base must be created by logging into mysql ```mysql -u root -p``` and running the command ```source db/schema.sql```
 * Quit mysql by running the command ```quit;```
 * To seed the data base run ```npm run seed```
-* Finally run ```npm run start``` and navigate to your url route localhost:3001 in your browser to access the website locally 
+* Finally run ```npm run start``` and navigate to your url route localhost:3001 in your to access the website locally 
 
 ## Screenshots 
 
 To Be Added
+
+# Future Development 
+
 
 
 ## Contributors

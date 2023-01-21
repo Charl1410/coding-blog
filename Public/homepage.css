@@ -1,4 +1,4 @@
-*{margin:0;
+* {margin:0;
 padding:0;
 background-color: rgb(234, 246, 246);
 }
@@ -210,6 +210,14 @@ textarea {
     justify-content: center;
 }
 
+.profile-post-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .saved-post-container {
     width:100%;
@@ -335,7 +343,7 @@ button {
 }
 
 #form-style {
-    width: 25%;
+    width: 35%;
 }
 
 
@@ -367,4 +375,12 @@ form input {
     font-size: 2rem;
   color: 1;
   margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #form-style {
+        width: 80%;
+        
+    }
+
 }

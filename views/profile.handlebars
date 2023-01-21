@@ -2,12 +2,9 @@
   <div id="body-container">
                 <aside class="aside-left">
                     <header class="profile-header">
-                        <p class="profile-name">Hi {{name}}!</p>
+                        <p class="profile-name">Hi {{name}} welcome to your profile!</p>
                     </header>
                         <p>Welcome to your page!</p>
-                    {{!-- <div class="profile-info">
-                        <input type="text" id="profile-information"><br>                   
-                     </div> --}}
                 </aside>
 
                     
@@ -22,12 +19,11 @@
                         
                         <h1>View your previous posts!!</h1>
                                     
-                            <div class="card-container">
+                            <div class="profile-post-container">
                                 {{#each posts as |post|}}
                                 {{> post-item}} 
                                 {{/each}}
                             </div>
-                    
                 </div>
         </div>
 
