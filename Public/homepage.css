@@ -1,4 +1,4 @@
-*{margin:0;
+* {margin:0;
 padding:0;
 background-color: rgb(234, 246, 246);
 }
@@ -72,7 +72,9 @@ nav {
 }
 
 .monospace {
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Source Code Pro', monospace;
+
+
 
 }
 
@@ -181,14 +183,17 @@ textarea {
 }
 
 .profile-name {
-    font-size: 150%;
+    font-size: 300%;
 }
 
 .aside-left {
     border:solid 5px rgb(255, 255, 255);
+    border-radius: 20px;
     width:80%;
     padding:2%;
     margin-top:5%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -198,7 +203,7 @@ textarea {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:1%
+    margin-bottom:5%;
 
 }
 
@@ -210,6 +215,17 @@ textarea {
     justify-content: center;
 }
 
+.profile-post-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    font-size: 200%;
+}
 
 .saved-post-container {
     width:100%;
@@ -335,7 +351,7 @@ button {
 }
 
 #form-style {
-    width: 25%;
+    width: 35%;
 }
 
 
@@ -367,4 +383,21 @@ form input {
     font-size: 2rem;
   color: 1;
   margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #form-style {
+        width: 80%;
+    }
+
+    .aside-left {
+        font-size: 80%;
+        padding:1%;
+        margin-top: 10%;
+    }
+
+    .profile-header {
+        margin-top: 10%;
+    }
+
 }
