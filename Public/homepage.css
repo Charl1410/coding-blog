@@ -187,7 +187,7 @@ textarea {
 .aside-left {
     border:solid 5px rgb(255, 255, 255);
     width:80%;
-    height:50vh;
+    padding:2%;
     margin-top:5%;
 
 }
@@ -228,7 +228,6 @@ textarea {
 }
 
 .post-title {
-    font-size: 200%;
     padding:2%;
     margin-bottom: 2%;
     width:80%;
