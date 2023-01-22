@@ -11,12 +11,12 @@
              </div>
 
          {{!-- {{#if logged_in}} --}}
-        <div class="comment-section" id="comment-section">
-                    <div>
-                        <input  class="create-comment" type="text" placeholder="Create your own comment" />
-                        <button type="submit" class="new-comment-form">Create</button>     
-                    </div>
-            {{!-- {{/if}} --}}
+       <div class="comment-section" id="comment-section">
+        <div>
+            <input class="create-comment" id="comment_{{id}}" type="text" placeholder="Create your own comment" />
+            <button type="button" class="new-comment-form" id="comment_button_{{id}}">Create</button>
+        </div>
+            
 
                     <div class="loaded-comments-container">
                              {{#each comments as |comment|}}
@@ -24,6 +24,6 @@
                             {{/each}}
                     </div>
         </div>
-
+        {{!-- {{/if}} --}}
 </div>
 
