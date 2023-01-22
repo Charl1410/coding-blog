@@ -1,18 +1,22 @@
-*{margin:0;
+* {margin:0;
 padding:0;
 background-color: rgb(234, 246, 246);
 }
 
 
 .material-symbols-outlined {
+    
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48;
+
+  background-color: rgb(213, 233, 233);
+  
 }
 
-.d-flex, .title, .card, footer, .create-post, .log-in-body {
+.d-flex, .title, .card, footer, .create-post, .log-in-body, #body-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +51,15 @@ nav li {
     display:flex;
     justify-content: center;
     align-items: center;
-    
-
+    background-color:rgb(213, 233, 233) ;
 }
 
-a {
+nav li a {
     text-decoration: none;
     color: black;
     background-color: rgb(213, 233, 233);
 }
+
 
 nav {
     border-bottom: dotted 1px rgb(102, 191, 191);
@@ -73,7 +77,9 @@ nav {
 }
 
 .monospace {
-    font-family: 'Source Code Pro', monospace;;
+    font-family: 'Source Code Pro', monospace;
+
+
 
 }
 
@@ -87,6 +93,14 @@ nav {
     text-align: center;
     padding:3%;
     box-shadow: 10px 0 10px 0 grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.5);
 
 }
 
@@ -96,6 +110,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(213, 233, 233);
+    border-radius: 10px;
       
 }
 
@@ -180,11 +195,18 @@ textarea {
 
 }
 
+.profile-name {
+    font-size: 300%;
+}
+
 .aside-left {
     border:solid 5px rgb(255, 255, 255);
-    width:30%;
-    height:50vh;
-    margin:1%;
+    border-radius: 20px;
+    width:80%;
+    padding:2%;
+    margin-top:5%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -194,7 +216,7 @@ textarea {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:1%
+    margin-bottom:5%;
 
 }
 
@@ -206,9 +228,20 @@ textarea {
     justify-content: center;
 }
 
+.profile-post-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    font-size: 200%;
+}
 
 .saved-post-container {
-    width:60%;
+    width:100%;
     /* border: solid 2px black; */
     margin:1%
 
@@ -224,7 +257,6 @@ textarea {
 }
 
 .post-title {
-    font-size: 200%;
     padding:2%;
     margin-bottom: 2%;
     width:80%;
@@ -316,9 +348,8 @@ button {
   margin-bottom: 1.2rem;
 }
 
-form {
+#profile-form-style, #form-style {
     margin: 7%;
-    width: 25%;
     padding: 3%;
     border: solid 2px #a1ccc8;
     border-radius: 10px;
@@ -327,9 +358,16 @@ form {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     font-size: 130%;
 
 }
+
+#form-style {
+    width: 35%;
+}
+
+
 
 form input {
   width: 92%;
@@ -358,4 +396,21 @@ form input {
     font-size: 2rem;
   color: 1;
   margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #form-style {
+        width: 80%;
+    }
+
+    .aside-left {
+        font-size: 80%;
+        padding:1%;
+        margin-top: 10%;
+    }
+
+    .profile-header {
+        margin-top: 10%;
+    }
+
 }

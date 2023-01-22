@@ -1,7 +1,7 @@
 <div class="title">
-        <img id="logo" src = "../project-2-views/logo.png">
+         <img id="logo" src = "../project-2-views/logo.png"> 
 
-        <p class="mono-font">CODE BLOG</p>
+        <p class="mono-font">O R A C O D E</p>
         <p class="monospace">For all your coding needs</p>
 </div>
 
@@ -11,10 +11,10 @@
                  {{/each}}
               </div>
 
-<script type="text/javascript" src="../Public/js/index.js"></script>
-    
+<script type="text/javascript" src="../js/index.js"></script>
 
-               
-
+{{#if logged_in}}
+<script src="../js/comment.js"></script>
+{{/if}}
      
    
