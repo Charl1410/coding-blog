@@ -127,6 +127,7 @@ a:hover {
     width:80%;
     padding:3%;
     margin-top: 3%;
+    display: none;
 }
 
 .loaded-comments {

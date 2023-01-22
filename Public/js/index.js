@@ -1,37 +1,23 @@
-console.log('hello')
-//getting all the comment sections
-const commentSection = document.querySelectorAll("#comment-section");
-//getting all the comment buttons 
-const viewCommentBtn = document.querySelectorAll("#view-comment-btn");
+const commentSection = document.querySelector("#comment-section");
+const viewCommentBtns = document.querySelectorAll("#view-comment-btn");
+let commentsVisible = false;
 
-//commentSection.style.display = "none";
+// Hides the comments by default
+commentSection.style.display = "none";
 
 function showHideComments(e) {
-    console.log('working')
-//targetting the specific button click 
-    if (e.target){
-        //working 
-        console.log('target')
-        commentSection.style.display === "none";
-        // commentSection.style.display = "block";
-        viewCommentBtn.textContent = "Hide comments";
-    }
-
-    else {
+    if(commentsVisible) {
         commentSection.style.display = "none";
-        viewCommentBtn.textContent = "View comments";
+        e.target.textContent = "View Comments";
+        commentsVisible = false;
+    } else {
+        commentSection.style.display = "block";
+        e.target.textContent = "Hide Comments";
+        commentsVisible = true;
     }
-    
-    
 }
 
-//QS on all of the buttons on click running the showHide comments function 
-const buttonListen = document.querySelectorAll("#view-comment-btn");
-buttonListen.forEach((button) => {
-    button.addEventListener('click', showHideComments);
-})
-
-
-
-
+viewCommentBtns.forEach(function(button) {
+    button.addEventListener("click", showHideComments);
+});
 
