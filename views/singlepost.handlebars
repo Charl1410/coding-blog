@@ -8,7 +8,9 @@
             <p>{{post.post_content}}</p>        
                 <div class="interaction-bar">
                 <button>View Comments</button>
-            
+                {{!-- <button>Upvote</button>
+                <button>Downvote</button>
+                <button>Save to reading list</button> --}}
                 </div>
 
             {{!-- {{#if logged_in}} --}}
@@ -20,8 +22,9 @@
                 {{!-- {{/if}} --}}
 
                         <div class="loaded-comments-container">
-                                {{#each comments as |comment|}}
-                                    <p class="loaded-comments">{{post.user.name}}: {{post.comment.text}}</p>
+                           
+                                {{#each post.comments as |comment|}}
+                                    <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
                                 {{/each}}
                         </div>
             </div>
@@ -29,4 +32,3 @@
     </div>
 </div>
 <script src="../js/comment.js" ></script>
-<script type="text/javascript" src="../js/index.js"></script>

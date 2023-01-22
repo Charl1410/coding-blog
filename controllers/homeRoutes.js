@@ -48,15 +48,18 @@ router.get("/post/:id", async (req, res) => {
     });
 
     const post = postData.get({ plain: true });
-    console.log(post)
+    console.log(post,"this is before the render");
 
     res.render("singlepost", {
+     
       post,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      
     });
+    console.log(post,"this is after the render");
   } catch (err) {
     res.status(500).json(err);
-  }
+  } 
 });
 
 router.get('/login', (req, res) => {
