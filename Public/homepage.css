@@ -131,7 +131,7 @@ a:hover {
     border: solid 2px white;
     width:80%;
     padding:3%;
-    display: none;
+    /* display: none; */
 }
 
 .new-comment-form {
