@@ -1,13 +1,19 @@
 console.log('hello')
+//getting all the comment sections
+const commentSection = document.querySelectorAll("#comment-section");
+//getting all the comment buttons 
+const viewCommentBtn = document.querySelectorAll("#view-comment-btn");
 
-const commentSection = document.getElementById("comment-section");
-const viewCommentBtn = document.getElementById("view-comment-btn");
+//commentSection.style.display = "none";
 
-commentSection.style.display = "none";
-
-function showComments() {
-    if (commentSection.style.display === "none"){
-        commentSection.style.display = "block";
+function showHideComments(e) {
+    console.log('working')
+//targetting the specific button click 
+    if (e.target){
+        //working 
+        console.log('target')
+        commentSection.style.display === "none";
+        // commentSection.style.display = "block";
         viewCommentBtn.textContent = "Hide comments";
     }
 
@@ -19,9 +25,13 @@ function showComments() {
     
 }
 
+//QS on all of the buttons on click running the showHide comments function 
+const buttonListen = document.querySelectorAll("#view-comment-btn");
+buttonListen.forEach((button) => {
+    button.addEventListener('click', showHideComments);
+})
 
 
-viewCommentBtn.addEventListener('click', showComments)
 
 
 
