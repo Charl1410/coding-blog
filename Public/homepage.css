@@ -16,7 +16,7 @@ background-color: rgb(234, 246, 246);
   
 }
 
-.d-flex, .title, .card, footer, .create-post, .log-in-body, #body-container {
+.d-flex, .title, .card, footer, .create-post, .log-in-body, #body-container, .comment-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@ background-color: rgb(234, 246, 246);
 
 #logo {
    height:10vh;
-   width:20vh; 
+   width:27vh; 
 }
 
 ul {
@@ -123,16 +123,25 @@ a:hover {
     font-size: 150%;
 }
 
+.interaction-bar {
+
+}
+
 .comment-section {
+    border: solid 2px white;
     width:80%;
     padding:3%;
-    margin-top: 3%;
     display: none;
 }
 
+.new-comment-form {
+    margin-top: 5%;
+}
+
 .loaded-comments {
-    border-bottom: solid 1px grey;
+    border-bottom: solid 1px rgb(203, 200, 200);
     margin:3%;
+
 
 }
 

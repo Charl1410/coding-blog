@@ -3,7 +3,7 @@ const viewCommentBtns = document.querySelectorAll("#view-comment-btn");
 let commentsVisible = false;
 
 // Hides the comments by default
-commentSection.style.display = "none";
+//commentSection.style.display = "none";
 
 function showHideComments(e) {
     if(commentsVisible) {
