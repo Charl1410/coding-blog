@@ -1,16 +1,20 @@
 console.log('hi')
 
-const commentSection = document.querySelector("#comment-section");
-const viewCommentBtns = document.querySelectorAll("#view-comment-btn");
+const commentSection = document.querySelectorAll("#comment-section");
+const viewCommentBtns = document.querySelectorAll(".view-comment-btn");
 let commentsVisible = false;
 
 function showHideComments(e) {
+
+    const postID = e.target.id;
+    // console.log(postID)
+
     if(commentsVisible) {
-        commentSection.style.display = "none";
+        commentSection[postID -1].style.display = "none";
         e.target.textContent = "View Comments";
         commentsVisible = false;
     } else {
-        commentSection.style.display = "block";
+        commentSection[postID -1].style.display = "block";
         e.target.textContent = "Hide Comments";
         commentsVisible = true;
     }}

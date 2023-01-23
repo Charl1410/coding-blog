@@ -29,6 +29,10 @@ background-color: rgb(234, 246, 246);
    width:27vh; 
 }
 
+.logo-dark {
+    color:darkblue;
+}
+
 ul {
     position: fixed;
     top:0;
@@ -128,10 +132,15 @@ a:hover {
 }
 
 .comment-section {
-    border: solid 2px white;
+    border-top: solid 2px white;
     width:80%;
     padding:3%;
-    /* display: none; */
+    margin-top:2%;
+    display: none;
+}
+
+.spacing {
+    margin: 1%;
 }
 
 .new-comment-form {
@@ -140,7 +149,7 @@ a:hover {
 
 .loaded-comments {
     border-bottom: solid 1px rgb(203, 200, 200);
-    margin:3%;
+    margin-top:5%;
 
 
 }
@@ -294,14 +303,10 @@ input {
         height:10px;
       }
 
-
-
-
 button {
   background-image: linear-gradient(#0dccea, #0d70ea);
   border: 0;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
