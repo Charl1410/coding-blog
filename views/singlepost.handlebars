@@ -6,20 +6,15 @@
 
 
             <p>{{post.post_content}}</p>        
-                <div class="interaction-bar">
-                <button>View Comments</button>
-                {{!-- <button>Upvote</button>
-                <button>Downvote</button>
-                <button>Save to reading list</button> --}}
-                </div>
+                
 
-            {{!-- {{#if logged_in}} --}}
+            {{#if logged_in}}
             <div class="comment-section" id="comment-section">
                         <div>
                             <input  class="create-comment" type="text" placeholder="Create your own comment" />
                             <button type="submit" class="new-comment-form">Create</button>     
                         </div>
-                {{!-- {{/if}} --}}
+                
 
                         <div class="loaded-comments-container">
                            
@@ -27,6 +22,7 @@
                                     <p class="loaded-comments">{{comment.user.name}}: {{comment.text}}</p>
                                 {{/each}}
                         </div>
+                        {{/if}}
             </div>
 
     </div>

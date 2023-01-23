@@ -3,9 +3,16 @@
 
         <p class="mono-font">O R A C O D E</p>
         <p class="monospace">For all your coding needs</p>
+            {{#if logged_in}}
+
+                {{else}}
+                <h1 class="monospace">Please log in to comment!</h1>
+
+                {{/if}}
 </div>
 
             <div class="card-container">
+            
                 {{#each posts as |post|}}
                 {{> post-item}} 
                  {{/each}}
