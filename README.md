@@ -41,12 +41,12 @@ To run the application:
 
 ## Screenshots 
 
-![]()
-![]()
+![](https://github.com/Charl1410/coding-blog/blob/69372bf7e03b22ee996a730c848c6429178e240b/Screenshots/Screenshot%202023-01-24%20at%2018.19.45.png)
+![](https://github.com/Charl1410/coding-blog/blob/69372bf7e03b22ee996a730c848c6429178e240b/Screenshots/Screenshot%202023-01-24%20at%2018.20.28.png)
 
-![]()
+![](https://github.com/Charl1410/coding-blog/blob/69372bf7e03b22ee996a730c848c6429178e240b/Screenshots/Screenshot%202023-01-24%20at%2018.20.35.png)
 
-![]()
+![](https://github.com/Charl1410/coding-blog/blob/69372bf7e03b22ee996a730c848c6429178e240b/Screenshots/Screenshot%202023-01-24%20at%2018.20.46.png)
 
 ## Contributors
 
