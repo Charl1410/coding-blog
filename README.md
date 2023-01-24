@@ -18,7 +18,7 @@ The purpose of this application is to provide users with a social media blog pla
 ## Initialisation
 To use this application node.js must be installed: https://nodejs.org/en/download/ <br />
 
-** The packages required are: **
+**The packages required are:**
  * **bcrypt**  @5.0.0
  * **connect-session-sequelize** @7.0.4 
  * **dotenv** @8.2.0 
