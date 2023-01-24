@@ -143,6 +143,10 @@ a:hover {
     margin: 1%;
 }
 
+.margin {
+    margin-top: 5%;
+}
+
 .new-comment-form {
     margin-top: 5%;
 }

@@ -1,8 +1,8 @@
 
 <div class="card-container">
-    <div class="card">
+    <div class="card margin">
             <p class="blog-title"><a href="{{post.id}}">{{post.post_title}}</a></p>
-            <p>{{post.date_created}}</p>
+            <p>{{format_date post.date_created}}</p>
             <p class="posted-by">Posted by {{post.user.name}}</p>
 
 
