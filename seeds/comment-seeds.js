@@ -1,4 +1,4 @@
-const Post = require("../models/Comments")
+const Post = require("../models/comments")
 
 const commentData = [
   {
