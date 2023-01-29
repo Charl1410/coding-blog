@@ -27,7 +27,7 @@ To use this application node.js must be installed: https://nodejs.org/en/downloa
 * **mysql2** @2.2.5 
 * **sequelize** @6.3.5 
 
-All dependencies should alreadt be in the package.json file and installed through running ```npm i``` in the terminal.
+All dependencies should already be in the package.json file and installed through running ```npm i``` in the terminal.
 
 ## Usage
 To use this application all dependencies must be installed. 
