@@ -38,6 +38,7 @@ To run the application:
 * Quit mysql by running the command ```quit;```
 * To seed the data base run ```npm run seed```
 * Finally run ```npm run start``` and navigate to your url route localhost:3001 in your to access the website locally 
+* Or follow this link to access the deployed application through Heroku: 
 
 ## Screenshots 
 
