@@ -30,7 +30,9 @@ To use this application node.js must be installed: https://nodejs.org/en/downloa
 All dependencies should already be in the package.json file and installed through running ```npm i``` in the terminal.
 
 ## Usage
-To use this application all dependencies must be installed. 
+To use this application all dependencies must be installed. <br>
+
+Check out the repo: https://github.com/Charl1410/coding-blog
 
 To run the application: 
 
@@ -38,7 +40,7 @@ To run the application:
 * Quit mysql by running the command ```quit;```
 * To seed the data base run ```npm run seed```
 * Finally run ```npm run start``` and navigate to your url route localhost:3001 in your to access the website locally 
-* Or follow this link to access the deployed application through Heroku: 
+* Or follow this link to access the deployed application through Heroku: https://code-blog.herokuapp.com/
 
 ## Screenshots 
 
