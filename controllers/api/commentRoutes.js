@@ -20,7 +20,7 @@ router.post('/', withAuth, async (req, res) => {
   //need to a route to delete a comment!
   router.delete('/:id', withAuth, async (req, res) => {
     try {
-      const deleteComment = await Comment.destroy({
+      const deleteComment = await Comments.destroy({
         where: {
           id: req.params.id,
           user_id: req.session.user_id,
